@@ -888,7 +888,7 @@
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
 #define BLTOUCH
-#define SERVO0_PIN 29 // JDS: Refer to notes folder: `Creality_BLTOUCH_Guide.pdf`
+#define SERVO0_PIN 27 // JDS: Refer to notes folder: `Creality_BLTOUCH_Guide.pdf`
 
 /**
  * Touch-MI Probe by hotends.fr
