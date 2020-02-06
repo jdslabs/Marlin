@@ -849,7 +849,7 @@
  *      - normally-open switches to 5V and D32.
  *
  */
-//#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
+//#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default | JDS: This may need to be enabled and set to Pin 27, then comment out SERVO0_PIN
 
 /**
  * Probe Type
@@ -945,11 +945,11 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -34.3, -33.6, -7.1 }
+#define NOZZLE_TO_PROBE_OFFSET { -34.3, -33.6, -7.1 }   // JDS: What's the corrected Z offset?
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define MIN_PROBE_EDGE 10
+#define MIN_PROBE_EDGE 50 // JDS: Experiment with this value to force probing inside of the bed! Default was 10. Let's try 50 to start...
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
