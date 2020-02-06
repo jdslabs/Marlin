@@ -849,7 +849,7 @@
  *      - normally-open switches to 5V and D32.
  *
  */
-//#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default | JDS: This may need to be enabled and set to Pin 27, then comment out SERVO0_PIN
+//#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
 
 /**
  * Probe Type
@@ -888,7 +888,7 @@
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
 #define BLTOUCH
-#define SERVO0_PIN 27 // JDS: Refer to notes folder: `Creality_BLTOUCH_Guide.pdf`
+#define SERVO0_PIN 27 // JDS: Refer to notes folder: `Creality_BLTOUCH_Guide.pdf` -- Confirmed working 2/6/2020
 
 /**
  * Touch-MI Probe by hotends.fr
@@ -949,7 +949,7 @@
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define MIN_PROBE_EDGE 50 // JDS: Experiment with this value to force probing inside of the bed! Default was 10. Let's try 50 to start...
+#define MIN_PROBE_EDGE 35 // JDS: Experiment with this value to force probing inside of the bed! Default of 10 probed off bed. Value of 50 worked. Bumped down to 35 to get closer to edges
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
