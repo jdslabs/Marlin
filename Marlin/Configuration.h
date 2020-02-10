@@ -952,7 +952,7 @@
 #define MIN_PROBE_EDGE 35 // JDS: Experiment with this value to force probing inside of the bed! Default of 10 probed off bed. Value of 50 worked. Bumped down to 35 to get closer to edges
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 8000
+#define XY_PROBE_SPEED 16000 // Austin: Default value of 8000; Doubled to speed up probing process.
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
